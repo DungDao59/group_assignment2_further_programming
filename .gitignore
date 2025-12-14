@@ -40,3 +40,6 @@ build/
 
 ### Environment ###
 .env
+
+### Bash running ###
+run.sh

@@ -1,10 +1,9 @@
 package group_3;
+import group_3.util.DatabaseConnection;
+
 public class Main {
     public static void main(String[] args) {
-        if (DatabaseConnection.testConnection()) {
-            System.out.println("✅ Connected to Supabase database!");
-        } else {
-            System.out.println("❌ Failed to connect!");
-        }
+        DatabaseConnection.setUpDatabase();
+        System.out.println("Set up database successfully");
     }
 }
